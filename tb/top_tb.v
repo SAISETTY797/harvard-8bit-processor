@@ -1,6 +1,4 @@
-//testing question --(a+b+c+d)^2 
-
-
+//assignment questions --(a+b+c+d)^2 
 
 `timescale 1ns/1ps
 `include "../src/top/top.v"
@@ -19,21 +17,13 @@ top dut(
     .write_en(write_en)
 );
 
-
-
-
 initial clk = 0;
 always #5 clk = ~clk;
-
-
 
 initial begin
     $dumpfile("top.vcd");
     $dumpvars(0,top_tb);
 end
-
-
-// ---------------- Monitor ----------------
 
 initial begin
 $monitor("TIME=%0t | INSTR=%b | A=%d | B=%d | OUT1=%d | OUT2=%d",
@@ -46,20 +36,14 @@ dut.output2
 );
 end
 
-
-
-
 initial begin
 
 reset = 1;
-write_en = 1;      // enable program loading
+write_en = 1;
 instruction_in = 0;
 
 #10;
 reset = 0;
-
-
-
 
 // MOV R1,#1
 instruction_in = 32'b00000000001000000000000000000001; #10;
@@ -85,47 +69,31 @@ instruction_in = 32'b00010000000001010000000010100100; #10;
 // MUL R6,R5,R5
 instruction_in = 32'b00011100111001100000000010100101; #10;
 
-
-
 // MOV R7, R6
 instruction_in = 32'b00000100111000000000000000000110; #10;
 
-
-
 // STORE MEM[8],R6
 instruction_in = 32'b00001100001000000000000000000110; #10;
-
-
-
 
 write_en = 0;     
 
 #200;
 
-
-// ---------------- Results ----------------
-
 $display("RESULT REGISTER R7 = %d", dut.rf.registers[7]);
 $display("RESULT REGISTER R6 = %d", dut.rf.registers[6]);
 $display("RESULT MEMORY[8] = %d", dut.wb.dm.memory[8]);
 
-
-$monitoroff;  //this is used to stop the monitor
-
-
+$monitoroff;
 
 #200;
 
-
 end
-
 
 integer i;
 initial begin
     #1000;  
     $display("=== Register File Contents ===");
     for(i = 0; i <8 ; i = i + 1) begin
-       
         $display("registers[%0d] = %d", i, top_tb.dut.rf.registers[i]);
     end
     $finish;
