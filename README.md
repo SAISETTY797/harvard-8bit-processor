@@ -36,6 +36,36 @@ The design features a custom ALU, instruction fetch/decode pipeline, register fi
                          └─────────────────────────────────────┘
 ```
 
+## 🏗️ Processor Architecture
+
+<p align="center">
+  <img src="docs/architecture.png" width="850">
+</p>
+
+The processor follows a Harvard Architecture with:
+- Separate instruction and data memory
+- 32 × 8-bit register file
+- Custom ALU supporting arithmetic and logic operations
+- Dedicated fetch, decode, execute, and write-back stages
+
+The ALU supports:
+- ADD
+- SUB
+- MUL
+- DIV
+- NEG
+- OR
+- XOR
+- NAND
+- NOR
+- XNOR
+- NOT
+- Logical Left Shift
+- Logical Right Shift
+
+
+
+
 ---
 
 ## ✨ Features
