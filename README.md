@@ -212,19 +212,32 @@ make clean
 
 ## 📊 Example Program — `(a + b + c + d)²`
 
-```
-MOV R1, #150       ; a = 150
-MOV R2, #150       ; b = 150
-MOV R3, #0        ; c = 0
-MOV R4, #0        ; d = 0
-ADD R5, R2, R1    ; R5 = a + b
-ADD R5, R5, R3    ; R5 = R5 + c
-ADD R5, R5, R4    ; R5 = R5 + d
-MUL R6, R5, R5    ; {R7,R6} = R5²
-STORE [8], R6     ; Store low byte to MEM[8]
+```assembly
+MOV R1, #1        ; a = 1
+MOV R2, #2        ; b = 2
+MOV R3, #3        ; c = 3
+MOV R4, #4        ; d = 4
+
+ADD R5, R2, R1   ; R5 = a + b
+ADD R5, R5, R3   ; R5 = R5 + c
+ADD R5, R5, R4   ; R5 = R5 + d
+
+MUL R6, R5, R5   ; {R7,R6} = R5²
+
+STORE [8], R6    ; Store low byte to MEM[8]
 ```
 
----
+### Expected Result
+
+```text
+(1 + 2 + 3 + 4)^2 = 100
+```
+
+Final values:
+- `R5 = 10`
+- `R6 = 100`
+- `R7 = 0`
+- `MEM[8] = 100`
 
 ## 📋 Module Dependency Graph
 
