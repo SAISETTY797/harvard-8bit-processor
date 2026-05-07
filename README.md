@@ -248,14 +248,58 @@ top.v
 
 ---
 
-## 📄 Documentation
+## 📄 Documentation & Report
 
-The full design specification, instruction format diagrams, and architecture figure are available in [`docs/Harvard_8bit_Processor_Design.pdf`](docs/Harvard_8_bit_processor_design.pdf).
+### Design Specification
+- [Harvard Processor Design Specification](docs/Harvard_8bit_processor_design.pdf)
 
----
+### Complete Project Report
+- [8-bit Harvard Processor Full Report](docs/8_BIT_PROCESSOR_REPORT.pdf)
+
+The report includes:
+- Processor architecture
+- Instruction encoding
+- RTL implementation
+- Testbench verification
+- Simulation waveforms
+- Cadence Genus synthesis
+- Timing analysis
+- Power analysis
+- Innovus physical design
+- Floorplanning
+- Routing
+- Final chip layout
 
 ## 🛠️ Tools Used
 
 - **HDL**: Verilog (IEEE 1364-2001)
 - **Simulator**: Icarus Verilog
 - **Waveform Viewer**: GTKWave
+
+
+---
+
+## 👨‍💻 Author
+
+**I.V. Sai Upesh**  
+Department of Electronics and Communication Engineering  
+Indian Institute of Information Technology, Design and Manufacturing (IIITDM) Kurnool
+
+### Areas of Interest
+- ASIC Design
+- RTL Design
+- Digital VLSI
+- Processor Architecture
+- FPGA Design
+- Design Verification
+
+### Tools & Technologies
+- Verilog HDL
+- Cadence Genus
+- Cadence Innovus
+- Icarus Verilog
+- GTKWave
+- OpenLane
+- SystemVerilog
+
+GitHub: [SAISETTY797](https://github.com/SAISETTY797)
