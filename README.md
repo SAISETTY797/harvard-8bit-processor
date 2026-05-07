@@ -114,12 +114,6 @@ The ALU supports:
 │
 ├── tb/                         # Testbench files
 │   ├── top_tb.v                # Full processor integration testbench
-│   ├── alu_tb.v                # ALU testbench
-│   ├── fetch_unit_tb.v         # Fetch unit testbench
-│   ├── decode_unit_tb.v        # Decode unit testbench
-│   ├── register_file_tb.v      # Register file testbench
-│   └── data_memory_tb.v        # Data memory testbench
-│
 ├── docs/
 │   └── Harvard_8bit_Processor_Design.pdf   # Full problem statement & spec
 │
