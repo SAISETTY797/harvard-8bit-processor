@@ -250,7 +250,7 @@ top.v
 
 ## 📄 Documentation
 
-The full design specification, instruction format diagrams, and architecture figure are available in [`docs/Harvard_8bit_Processor_Design.pdf`](docs/Harvard_8bit_Processor_Design.pdf).
+The full design specification, instruction format diagrams, and architecture figure are available in [`docs/Harvard_8bit_Processor_Design.pdf`](docs/Harvard_8_bit_processor_design.pdf).
 
 ---
 
