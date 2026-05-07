@@ -1,0 +1,16 @@
+# Simulation outputs
+sim/
+*.vcd
+*.lxt
+*.fst
+
+# Compiled simulation binaries
+*.out
+*_sim
+
+# OS & editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+*~
