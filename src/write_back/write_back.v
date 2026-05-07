@@ -2,7 +2,7 @@
 
 
 
-`include "data_memory.v"
+`include "../data_memory/data_memory.v"
 
 
 module write_back(

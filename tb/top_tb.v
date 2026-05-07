@@ -3,7 +3,7 @@
 
 
 `timescale 1ns/1ps
-`include "top.v"
+`include "../src/top/top.v"
 
 module top_tb;
 
