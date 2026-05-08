@@ -315,4 +315,4 @@ Indian Institute of Information Technology, Design and Manufacturing (IIITDM) Ku
 - OpenLane
 - SystemVerilog
 
-GitHub: [SAISETTY797](https://github.com/SAISETTY797)
+GitHub: [ivsaiupesh](https://github.com/ivsaiupesh)
